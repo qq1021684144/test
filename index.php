@@ -24,4 +24,4 @@ try {
 $redis = new redis();
 //连接redis,第一个参数是redis服务的IP127.0.0.1是自己的,6379是端口号
 $redis->connect('127.0.0.1', 6379);
-echo $redis->get('name');
+echo $redis->set('name','这是一个测试');
